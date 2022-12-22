@@ -1,7 +1,7 @@
 # Belly-Button-Challenge
 
 # Overview
-* This assignment involves building an interactive dashboard to explore the Belly Button Biodiversity. The dataset Links to an external site, which catalogs the microbes that colonize human navels. It reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare ((http://robdunnlab.com/projects/belly-button-biodiversity/)).
+* This assignment involves building an interactive dashboard to explore the Belly Button Biodiversity. The dataset Links to an external site, which catalogs the microbes that colonize human navels. It reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare (http://robdunnlab.com/projects/belly-button-biodiversity/).
 ![websitepage](screenshots/ss_websitepage.png)
 
 # Methodology
@@ -32,11 +32,7 @@
 
 ### Rendered Interactive Dashboard
 * Updated all the plots when a new sample was selected. An example dashboard is shown as follows:
-    * Initial Dashboard:
-    ![Initial Dashboard](screenshots/ss_initial_dashboard.png)
-
-    * Reset Dashboard:
-    ![Reset Dashboard](screenshots/ss_reset_dashboard.png)
+![Initial Dashboard](screenshots/ss_initial_dashboard.png)
 
 ### App Deployment
 * Deployed the app to GitHub Page. 

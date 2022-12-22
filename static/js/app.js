@@ -15,7 +15,7 @@ const dataProm = d3.json(url)
 // })
 
 
-// // // // Create 'initialize' function (int) to populate the dropdown menu and plot charts with first ID // // // //
+// // // Create 'initialize' function (int) to populate the dropdown menu and plot charts with first ID in 'names' // // //
 
 function init() {
   // Read in the data from the url
@@ -39,21 +39,21 @@ function init() {
     // Get the first participant ID (initID) from 'data.names' for the initial setup of all charts/table
     var initID = data.names[0]
     
-    // Call demographic and plotChart (bar and bubble chart) functions with initID as for initial display
+    // Call demographic and plotChart (bar and bubble chart) functions with initID for initial display
     demographicInfo(initID);
     plotChart(initID);  
   }));
 }
 
 
-// // // // Create 'changeOption' function to render/create charts with the 'selected ID' data // // // //
+// // // Create 'changeOption' function to render/create charts with the 'selected ID' data // // //
 
 function optionChanged(selectedID) {
   demographicInfo(selectedID);
   plotChart(selectedID);
 };
 
-// // // // Create function for plotChart (bar and bubble chart)// // // //
+// // // Create function for plotChart (bar and bubble chart) // // //
 
 function plotChart(selectedID) {
   // Read in the data from the url
@@ -68,7 +68,7 @@ function plotChart(selectedID) {
     var values = testSubject.sample_values;
     var labels = testSubject.otu_labels;
 
-    // Horizontal Bar Chart: 
+    // Horizontal Bar Chart 
     // 'slice' function is used to get the first 10 (top 10) values from the list
     // 'reverse' function is used to flip the order to get the max value at the top
     // 'text' is used to add hovertext
@@ -145,5 +145,5 @@ function demographicInfo(selectedID) {
   }));    
 }
 
-// Call the 'init' function to intialize the interactive dashboard
+// // // Call the 'init' function to intialize the interactive dashboard // // //
 init()
